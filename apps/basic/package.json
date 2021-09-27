@@ -1,0 +1,16 @@
+{
+  "name": "@examples/basic",
+  "version": "1.0.0",
+  "description": "Basic example",
+  "author": "Simon Babay",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "tsup src/index.ts --watch src --onSuccess 'node dist/index.cjs'",
+    "build": "tsup src/index.ts",
+    "start": "node dist/index.cjs"
+  },
+  "dependencies": {
+    "@lib/core": "workspace:*"
+  }
+}
