@@ -12,7 +12,8 @@
   },
   "nodemonConfig": {
     "watch": [
-      "src/"
+      "src/",
+      "../../packages/**/src/"
     ],
     "execMap": {
       "ts": "ts-eager"
