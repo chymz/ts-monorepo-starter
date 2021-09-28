@@ -7,15 +7,16 @@
   "private": true,
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "build": "tsup src/index.ts --sourcemap",
+    "build": "spack --target node src/index.ts",
     "start": "node dist/index.cjs"
   },
   "nodemonConfig": {
     "watch": [
-      "src/"
+      "src/",
+      "../../packages/**/src/"
     ],
     "execMap": {
-      "ts": "ts-eager"
+      "ts": "node -r @swc-node/register -r tsconfig-paths/register"
     }
   },
   "dependencies": {
