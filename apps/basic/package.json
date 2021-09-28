@@ -1,16 +1,25 @@
 {
-  "name": "@examples/basic",
+  "name": "@apps/basic",
   "version": "1.0.0",
   "description": "Basic example",
   "author": "Simon Babay",
   "license": "MIT",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "tsup src/index.ts --watch src --onSuccess 'node dist/index.cjs'",
-    "build": "tsup src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "build": "tsup src/index.ts --sourcemap",
     "start": "node dist/index.cjs"
   },
+  "nodemonConfig": {
+    "watch": [
+      "src/"
+    ],
+    "execMap": {
+      "ts": "ts-eager"
+    }
+  },
   "dependencies": {
-    "@lib/core": "workspace:*"
+    "@lib/core": "workspace:*",
+    "source-map-support": "^0.5.20"
   }
 }
