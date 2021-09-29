@@ -10,7 +10,8 @@
     "skipLibCheck": true,
     "strict": true,
     "lib": ["esnext"],
-    "types": ["node", "jest"]
+    "types": ["node", "jest"],
+    "experimentalDecorators": true
   },
   "include": ["**/src/**/*.ts"]
 }
