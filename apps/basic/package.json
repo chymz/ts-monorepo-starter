@@ -16,7 +16,7 @@
       "../../packages/**/src/"
     ],
     "execMap": {
-      "ts": "node -r @swc-node/register -r tsconfig-paths/register"
+      "ts": "node -r @swc/register -r tsconfig-paths/register"
     }
   },
   "dependencies": {

@@ -6,5 +6,4 @@
 - Jest: For tests, pre-configured to use TypeScript
 - ESlint & Prettier: with recommended rules
 - Husky: To lint files before commit
-- TS-Eager & Nodemon: for development / hot reload
-- TSup: To bundle production files
+- SWC & Nodemon: to bundle files & hot reload

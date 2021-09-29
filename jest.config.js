@@ -5,6 +5,6 @@ module.exports = {
   testEnvironment: 'node',
   testMatch: ['**/?(*.)+(spec|test).[jt]s?(x)'],
   transform: {
-    '^.+\\.(t|j)sx?$': ['@swc-node/jest'],
+    '^.+\\.(t|j)sx?$': ['@swc/jest'],
   },
 };
